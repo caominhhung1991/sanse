@@ -45,12 +45,12 @@ router.get('/', (req, res) => {
 
 // create a user
 router.post('/users', (req, res) => {
-  
+	let user = req.body;
 	connection(db => {
 		db.collection('users')
 			.save(user, (err, user) => {
 				if (err) {
-					res.send(err)
+					res.send(err);
 				}
 				res.json(user);
 			})

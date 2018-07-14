@@ -1,0 +1,26 @@
+.main-contents{
+    padding: 1%;
+}
+.course-img{
+    
+}
+
+.course-title{
+    font-size: 32px;
+}
+
+.course-description{
+    font-size: 22px;
+    color: darkslategray;
+}
+.btn-enroll{
+    width: 90%;
+    border: none;
+    background-color: #e7e7e7; 
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
