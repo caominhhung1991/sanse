@@ -3,6 +3,7 @@ const router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectId;
 
+
 const urlDB = "mongodb://localhost:27017/sanse";
 
 // Connect
@@ -25,16 +26,16 @@ let response = {
 	status: 200, data: [], message: null
 }
 
-// get all widget - widgets
-router.get('/widgets', (req, res) => {
-	console.log('get all widget - widgets')
+// get all user - users
+router.get('/', (req, res) => {
+	console.log('get all user - users')
 	// let collection = req.params.col;
 	connection(db => {
-		db.collection('widgets')
+		db.collection('users')
 			.find()
 			.toArray()
-			.then(widgets => {
-				res.json(widgets);
+			.then(users => {
+				res.json(users);
 			})
 			.catch(err => {
 				sendError(err, res)
@@ -42,4 +43,18 @@ router.get('/widgets', (req, res) => {
 	})
 })
 
-module.exports = router;
+// create a user
+router.post('/users', (req, res) => {
+  
+	connection(db => {
+		db.collection('users')
+			.save(user, (err, user) => {
+				if (err) {
+					res.send(err)
+				}
+				res.json(user);
+			})
+	});
+});
+
+                                                   
