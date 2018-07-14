@@ -1,0 +1,126 @@
+$dark-blue: #087090;
+$blue: #0CA2D0;
+$yellow: #ffcc00;
+
+.header {
+    color: white;
+    border-bottom: 2px solid $dark-blue;
+    &__navbarTop {
+			display: flex;
+			padding: 15px;
+			justify-content: space-between;
+			align-items: center;
+			background-color: $dark-blue;
+			color: white;
+    }
+    &__navbarSecond {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+    }
+    &__login { 
+			cursor: pointer;
+			color: white;
+			transition: all 0.3s;
+			&:hover {
+					color: $yellow;
+			}
+    }
+    &__title {
+			margin: 0;
+			padding: 10px;
+			font-weight: 700;
+			color: $dark-blue;
+    }
+    &__layouts {
+			margin: 0;
+			color: $dark-blue;
+			display: flex;
+			flex-flow: row nowrap;
+			// padding: 10px;
+			& > div {
+				margin-right: 0px;
+				padding: 5px;
+				cursor: pointer;
+				&:hover {
+					font-weight: 600;
+				}
+			}
+    }
+}
+
+.header {
+	&__mode {
+		// display: none;
+		position: absolute;
+		margin-top: 10px;
+		display: flex;
+		flex-flow: column;
+		
+		
+		button {
+			background: $dark-blue;
+			border: none;
+			padding: 10px 7px;
+			color: white;
+			font-weight: 600;
+			transition: color 0.15s;
+			&:hover {
+				color: $yellow;
+			}
+		}	
+	}
+}
+
+.Layout {
+	&:hover > span {
+		background: $yellow;
+	}
+}
+
+.Active {
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+
+
+.Big {
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	background: gray;
+}
+
+.Mid {
+	display: inline-block;
+	margin-left: 2px;
+	width: 10px;
+	height: 100%;
+	background: gray;
+}
+
+.MotPhanBa {
+	display: inline-block;
+	margin-left: 2px;
+	width: 7px;
+	height: 100%;
+	background: gray;
+}
+
+.HaiPhanBa {
+	display: inline-block;
+	margin-left: 2px;
+	width: 13px;
+	height: 100%;
+	background: gray;
+}
+
+.MotPhanTu {
+	display: inline-block;
+	margin-left: 2px;
+	width: 5px;
+	height: 100%;
+	background: gray;
+}
+

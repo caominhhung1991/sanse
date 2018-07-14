@@ -1,0 +1,28 @@
+{
+  "title": "Text Widget",
+  "type": "Chart",
+  "minWidth": 400,
+  "minHeight": 400,
+  "col": "col1",
+  "datatable": {
+    "dataSource": "Contact",
+    "columns": [
+      "title",
+      "employeeId",
+      "superiorId"
+    ],
+    "selectedColumns": [
+      "id",
+      "fullname",
+      "department"
+    ]
+  },
+  "chart": {
+    "dataSource": "Contact",
+    "chartType": "PieChart",
+    "groupBy": "title"
+  },
+  "textWidget": {
+    "textContent": "halo"
+  }
+}
