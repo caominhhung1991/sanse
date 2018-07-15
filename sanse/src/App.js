@@ -4,13 +4,16 @@ import { Route, Switch } from 'react-router-dom';
 // import WidgetDetails from './components/WidgetDetails/WidgetDetails';
 import Layout from './hoc/Layout/Layout';
 import SanSe from './containers/sanse/SanSe';
+import KhoaHocDetails from './components/KhoaHoc/KhoaHocDetails/KhoaHocDetails';
+import User from './components/User/User';
 
 const App = () => {
 	return (
 			<Layout>
 					<Switch>
 						<Route exact path="/" component={SanSe} />
-						{/* <Route path="/widget-details/:type/:id" component={WidgetDetails}/> */}
+						<Route path="/khoahoc-details/:id" component={KhoaHocDetails}/>
+						<Route path="/user" component={User}/>
 					</Switch>
 			</Layout>
 	);

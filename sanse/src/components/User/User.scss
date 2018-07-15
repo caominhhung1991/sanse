@@ -1,0 +1,71 @@
+$blue: #3366cc;
+
+.User {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+
+  &Content {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    &Title {
+      font-weight: 600;
+      font-size: 17px;
+    }
+  }
+
+  &Title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &Info {
+    border: 1px solid lightgray;
+    border-top: 7px solid $blue;
+    border-radius: 5px;
+  }
+
+  &ImgWrap {
+    width: 20%;
+  }
+
+  &Img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+
+  &ContentTop {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &InfoLeft {
+    width: 80%;
+  }
+
+  &InfoBottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    .UserInfo {
+      width: 49%;
+    }
+  }
+}
+
+.TagName {
+  margin-bottom: 10px;
+}
+
+.TagCourseTime {
+  border-bottom: 1px solid lightgray;
+  &:hover {
+    // color: ligh
+  }
+}

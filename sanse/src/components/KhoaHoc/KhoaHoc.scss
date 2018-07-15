@@ -1,11 +1,11 @@
-
+$blue: #3366cc;
+$light-blue: #5d7fc2;
 .KhoaHoc {
   padding: 20px 10px;
   margin: 10px 0;
   box-shadow: 0px 0px 1px lightgray;
   transition: all 0.3s;
   cursor: pointer;
-  
   &:hover {
     // background: rgb(210, 222, 226);
     box-shadow: 0px 0px 5px gray;
@@ -18,27 +18,12 @@
     
   }
 
-  button {
-    padding: 7px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 13px;
-    background: sandybrown;
-    transition: all 0.3s;
-    margin-top: 5px;
-    &:hover {
-      background: rgb(210, 222, 226);
-    }
-
-    
-  }
+  
 
   section {
     border-top: 1px solid lightgray;
     padding-top: 10px;
   }
-
-
 
   &Left {
 
@@ -49,8 +34,23 @@
   }
 }
 
+.Link {
+  display: inline-block;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 13px;
+  background: sandybrown;
+  transition: all 0.3s;
+  text-decoration: none;
+  margin-top: 10px;
+  &:hover {
+    background: rgb(210, 222, 226);
+  }
+}
+
 .ShowDetail {
-  height: 100px;
+  // height: 100px;
 }
 
 .Companies {
@@ -60,14 +60,13 @@
 .Company {
   padding: 5px;
   margin-right: 5px;
-  background: rgb(253, 177, 169);
-  box-shadow: 0px 0px 1px salmon;
+  background: $blue;
+  box-shadow: 0px 0px 1px $blue;
+  color: white;
   border-radius: 4px;
   transition: all 0.3s;
   &:hover {
-    background: rgb(248, 88, 70);
-    color: white;
-
+    background: $light-blue;
   }
 }
 

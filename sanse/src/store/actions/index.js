@@ -1,3 +1,3 @@
 export {
     
-} from '../../containers/store/sanse/sanse.action';
+} from './../../containers/sanse/store/sanse.action';

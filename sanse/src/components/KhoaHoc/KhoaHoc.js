@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import classes from './KhoaHoc.scss';
 
@@ -10,6 +11,7 @@ export default class KhoaHoc extends Component {
 
   render() {
     let khoaHocClass = [classes.KhoaHoc];
+    let url = "/khoahoc-details/" + this.props.khoaHoc.id;
     if (this.props.khoaHoc.showDetail) {
       khoaHocClass.push(classes.ShowDetail)
     }
@@ -29,10 +31,10 @@ export default class KhoaHoc extends Component {
         {this.props.khoaHoc.showDetail ? (
           <section>
             <div> 
-              nội dung môn học
+              {this.props.khoaHoc.purpose}
             </div>
 
-            <button>Xem Chi Tiết</button>
+            <Link className={classes.Link} to={url}>Xem Chi Tiết</Link>
             
           </section>) 
           : null}
