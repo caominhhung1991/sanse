@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.1.0-web/css/all.css">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Course</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">React Nativi</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Dashboard
+            </li>
+        </ol>
+    </nav>
+    <div class="container-fluid global">
+        <div class="row">
+            <div class="col-md-3" style="padding-right: 0px;">
+                <div class="col-md-12 process-content box">
+                    <table class="course-process-info">
+                        <tr>
+                            <td class="name-info"><a href="./course_dashboard.html">Overview</a></td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                The Basics
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Props</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">State</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Style</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Height and Width
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Layout with Flexbox</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Handling Text Input</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Handling Touches</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-info">
+                                <a href="#">Using a ScrollView
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="col-md-12 details-content box">
+                    <h1>Learn the Basics</h1>
+                    React Native is like React, but it uses native components instead of web components as building blocks. So to understand
+                    the basic structure of a React Native app, you need to understand some of the basic React concepts, like
+                    JSX, components, state, and props. If you already know React, you still need to learn some React-Native-specific
+                    stuff, like the native components. This tutorial is aimed at all audiences, whether you have React experience
+                    or not. Let's do this thing.
+                    <br><br>
+                    <h1>Hello World</h1>
+                    In accordance with the ancient traditions of our people, we must first build an app that does nothing except say "Hello world". Here it is:
+
+                    Some of the things in here might not look like JavaScript to you. Don't panic. This is the future.
+
+First of all, ES2015 (also known as ES6) is a set of improvements to JavaScript that is now part of the official standard, but not yet supported by all browsers, so often it isn't used yet in web development. React Native ships with ES2015 support, so you can use this stuff without worrying about compatibility. import, from, class, and extends in the example above are all ES2015 features. If you aren't familiar with ES2015, you can probably pick it up just by reading through sample code like this tutorial has. If you want, this page has a good overview of ES2015 features.
+
+The other unusual thing in this code example is <View><Text>Hello world!</Text></View>. This is JSX - a syntax for embedding XML within JavaScript. Many frameworks use a special templating language which lets you embed code inside markup language. In React, this is reversed. JSX lets you write your markup language inside code. It looks like HTML on the web, except instead of web things like <div> or <span>, you use React components. In this case, <Text> is a built-in component that just displays some text and View is like the <div> or <span>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./vendor/fontawesome-free-5.1.0-web/js/all.js"></script>
+</body>
+
+</html>
