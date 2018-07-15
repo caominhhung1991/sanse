@@ -41,11 +41,13 @@ $light-blue: #5d7fc2;
   border-radius: 5px;
   font-size: 13px;
   background: sandybrown;
+  color: white;
   transition: all 0.3s;
   text-decoration: none;
   margin-top: 10px;
   &:hover {
     background: rgb(210, 222, 226);
+    color: #333;
   }
 }
 
@@ -73,4 +75,16 @@ $light-blue: #5d7fc2;
 .Title {
   font-weight: 600;
   font-size: 18px;
+}
+
+.KhoaHocDetailHeader {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Courses {
+  
 }

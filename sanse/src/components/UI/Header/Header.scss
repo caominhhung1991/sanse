@@ -83,14 +83,15 @@ $yellow: #ffcc00;
 }
 
 .SanSeLogo {
-	width: 25px;
+	width: 35px;
 	position: relative;
 	top:5px;
 }
 
 .Link {
   padding: 7px 10px;
-  cursor: pointer;
+	cursor: pointer;
+	// font-size: 25px;
   border-radius: 5px;
   transition: all 0.3s;
   text-decoration: none;
@@ -98,4 +99,8 @@ $yellow: #ffcc00;
 	&:hover {
 		color: sandybrown;
 	}
+}
+
+.LogoText {
+	font-size: 20px;
 }

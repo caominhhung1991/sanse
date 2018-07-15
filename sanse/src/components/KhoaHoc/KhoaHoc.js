@@ -9,9 +9,13 @@ export default class KhoaHoc extends Component {
     showDetailHandle: PropTypes.func.isRequired,
   }
 
+  // onStopPaganition = (event) => {
+  //   event.stopPaganition();
+  // }
+
   render() {
     let khoaHocClass = [classes.KhoaHoc];
-    let url = "/khoahoc-details/" + this.props.khoaHoc.id;
+    let url = "/khoahocs-details/" + this.props.khoaHoc.id;
     if (this.props.khoaHoc.showDetail) {
       khoaHocClass.push(classes.ShowDetail)
     }
@@ -34,12 +38,13 @@ export default class KhoaHoc extends Component {
               {this.props.khoaHoc.purpose}
             </div>
 
-            <Link className={classes.Link} to={url}>Xem Chi Tiết</Link>
+            <Link 
+              className={classes.Link} 
+              to={url}
+            >Xem Chi Tiết</Link>
             
           </section>) 
           : null}
-
-        
       </div>
     )
   }

@@ -11,7 +11,9 @@ import App from './App';
 // styles - css
 import './static/sass/main.scss';
 import './../node_modules/font-awesome/css/font-awesome.css';
+import './../node_modules/bootstrap/dist/css/bootstrap.css';
 import sanseReducer from './containers/sanse/store/sanse.reducer';
+import './static/css/KhoaHocDetails.css';
 
 const rootReducer = combineReducers({
     sanse: sanseReducer,

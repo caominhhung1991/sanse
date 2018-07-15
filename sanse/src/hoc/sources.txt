@@ -1,0 +1,35 @@
+khoaHocs: [
+    {
+      id: 1,
+      title: 'Front end courses',
+      companies: ['KMS', 'GameLoft', 'FPT', 'Vietel'],
+      courses: [
+        { 
+          title: 'HTML5/CSS3',
+          time: '20-30 hours',
+        },{
+          title: 'Javascript Fundamental ES6/ES7',
+          time: '35-45 hours'
+        }, {
+          title: 'Javascript Framework (React/Angular)',
+          time: '50-65 hours'
+        }
+      ],
+      showDetail: true,
+      purpose: "Cung cấp các khác học về lập trình mới nhất về front-end như HTML5/CSS3, Javascript Fundamentals (ES6/ES7), Javascript Frameworks (React/ Angular)",
+
+    }, {
+      id: 2,
+      title: 'Back end courses',
+      companies: ['KMS', 'Vietel'],
+      courses: [{
+        title: 'Node.js',
+        time: '45-60 hours'
+      }, {
+        title: 'Database (Mongodb/Postgresql)',
+        time: '35-55 hours'
+      }],
+      showDetail: false,
+      purpose: "Khóa học cung cấp kiến thức về Node.js, Restify, Swagger... và các công cụ Unit test frameworks như Mocha, Chai JS, Nock... để xử lý các tác vụ hệ thống"
+    }
+  ], 

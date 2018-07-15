@@ -22,7 +22,7 @@ class Header extends Component {
 		return (
 			<header className={classes.header}>
 				<nav className={classes.header__navbarTop} key="navbarTop">
-					<Link to="/" className={classes.Link} ><img className={classes.SanSeLogo} src={SanSeLogo} /> SanSe</Link>
+					<Link to="/" className={classes.Link} ><img className={classes.SanSeLogo} src={SanSeLogo} /> <span className={classes.LogoText}>SanSe</span></Link>
 					{login}
 				</nav>
 			</header>
