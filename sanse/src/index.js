@@ -11,7 +11,6 @@ import App from './App';
 // styles - css
 import './static/sass/main.scss';
 import './../node_modules/font-awesome/css/font-awesome.css';
-import './static/css/index.css';
 import sanseReducer from './containers/sanse/store/sanse.reducer';
 
 const rootReducer = combineReducers({
