@@ -6,6 +6,7 @@
 /sanse/package-lock.json
 /dashboard-server/package-lock.json
 **/node_modules
+**/vendor
 
 # testing
 /sanse/coverage

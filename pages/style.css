@@ -1,20 +1,62 @@
+*{
+    
+}
+
+body{
+    background: #eeeeee;
+
+}
+
+.global{
+    
+}
+
+.box {
+    /* position: relative;
+    -moz-box-shadow: 1px 1px  rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 1px  rgba(0, 0, 0, .5);
+    box-shadow: 1px 1px rgba(0, 0, 0, .5);
+    padding: 10px; */
+}
 .main-contents{
     padding: 1%;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.process-content{
+    background: white;
+    padding: 10px 15px;
+}
+
+.details-content{
+    background: white;
+    font-weight: lighter;
+    padding: 10px 15px;
 }
 .course-img{
-    
+
 }
 
 .course-title{
     font-size: 32px;
 }
 
+.compary-icon{
+    width: 100px;
+    height: 100%;
+}
 .course-description{
-    font-size: 22px;
+    font-size: 17px;
     color: darkslategray;
 }
+
+.tiny-des{
+    font-size: 13px;
+    color: gray;
+}
 .btn-enroll{
-    width: 90%;
+    width: 100%;
     border: none;
     background-color: #e7e7e7; 
     color: black;
@@ -23,4 +65,29 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-enroll:hover{
+    opacity: 0.7;
+    right: 0;
+  }
+
+table.course-process-info{
+    width: 100%;
+}
+
+table tr{
+    height: 40px;
+    border-bottom: 1px solid #e7e7e7 ;
+}
+.icon-info{
+    padding-bottom: 4px; 
+    width: 28px;
+}
+.name-info{
+    width: 85px;
+}
+.data-info{
+ 
 }
